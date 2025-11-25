@@ -3,6 +3,7 @@ package br.com.ubirataoliveira.desafio_todo_list.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ubirataoliveira.desafio_todo_list.entity.Todo;
 import br.com.ubirataoliveira.desafio_todo_list.service.TodoService;
+
 
 @RestController
 @RequestMapping("/todo")
@@ -28,7 +30,8 @@ public class TodoController {
         return todoService.create(todo);
     }
 
-    @PutMapping
+    
+    @GetMapping
     List<Todo> list(){
         return todoService.list();
     }
