@@ -7,7 +7,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 
 import br.com.ubirataoliveira.desafio_todo_list.entity.Todo;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class DesafioTodoListApplicationTests {
 	@Autowired
 	private WebTestClient webTestClient;
