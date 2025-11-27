@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "todos")
@@ -12,7 +13,9 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; // O uso do Long se dá pois é um tipo objeto da Wrapper Class que pode ser nulo, e aceita valores maiores que o int primitivo.
+    @NotBlank(message = "O nome não pode ser vazio")
     private String nome;
+    @NotBlank(message = "A descrição não pode ser vazia")
     private String descricao;
     private boolean realizado;
     private int prioridade;
@@ -22,6 +25,9 @@ public class Todo {
         this.nome = nome;
         this.prioridade = prioridade;
         this.realizado = realizado;
+    }
+
+    public Todo() {
     }
 
     public Long getId() {

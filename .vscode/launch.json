@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DesafioTodoListApplication<desafio-todo-list>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.ubirataoliveira.desafio_todo_list.DesafioTodoListApplication",
+            "projectName": "desafio-todo-list",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

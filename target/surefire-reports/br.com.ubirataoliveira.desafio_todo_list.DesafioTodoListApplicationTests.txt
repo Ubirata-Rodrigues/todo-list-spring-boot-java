@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.ubirataoliveira.desafio_todo_list.DesafioTodoListApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.23 s -- in br.com.ubirataoliveira.desafio_todo_list.DesafioTodoListApplicationTests
