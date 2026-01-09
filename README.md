@@ -7,15 +7,6 @@
 
 API REST para gerenciamento de tarefas (Todo List) desenvolvida como desafio de backend. O projeto utiliza **Spring Boot** para criar um sistema CRUD completo, com ordenação de tarefas por prioridade.
 
-##  Índice
-
-* [Sobre o Projeto](#-sobre-o-projeto)
-* [Tecnologias](#-tecnologias)
-* [Começando](#-começando)
-* [Configuração do Banco](#-configuração-do-banco)
-* [Endpoints da API](#-endpoints-da-api)
-* [Contribuição](#-contribuição)
-* [Licença](#-licença)
 
 ---
 
