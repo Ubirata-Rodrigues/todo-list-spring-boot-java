@@ -31,7 +31,6 @@ public class TodoController {
         return todoService.create(todo);
     }
 
-    
     @GetMapping
     List<Todo> list(){
         return todoService.list();

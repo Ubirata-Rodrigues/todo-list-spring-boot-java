@@ -60,9 +60,10 @@ class DesafioTodoListApplicationTests {
             .expectBodyList(Todo.class)
             .returnResult()
             .getResponseBody()
-            .get(0).getId();
+            .get(0)
+            .getId();
         
-        var todoAtualizado = new Todo("Atualizado", "Nova Descrição", 3, true);
+        var todoAtualizado = new Todo("2", "Nova Descrição", 3, true);
         todoAtualizado.setId(id);
         
         webTestClient
